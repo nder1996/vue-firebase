@@ -94,27 +94,6 @@ export default {
                 let encuesta = snap.val();
                 this.User.push(encuesta);
             })
-            /*const dbRef = firebase.database().ref();
-            dbRef.child("DATOS_ENCUESTA").child(lastname).get().then((snapshot) => {
-                if (snapshot.exists()) {
-                    console.log(snapshot.val());
-                } else {
-                    console.log("No data available");
-                }
-            }).catch((error) => {
-                console.error(error);
-            });
-            /*const dbRef = firebase.database().ref();
-            dbRef.child("DATOS_ENCUESTA").child(lastname).get().then((snapshot) => {
-                if (snapshot.exists()) {
-                    //user = snapshot.val();
-                    console.log('Datos firebase '+snapshot.val());
-                } else {
-                    console.log("No data available");
-                }
-            }).catch((error) => {
-                console.error(error);
-            });*/
         }
     }
 }
